@@ -5,7 +5,7 @@ async function main() {
 
   console.log("Deploying contracts with the account:", deployer.address);
 
-  const MyToken = await ethers.getContractFactory("FREECOIN");
+  const MyToken = await ethers.getContractFactory("Ballot");
   const myToken = await MyToken.deploy();
 
   console.log("oxygen deployed to:", myToken.address);
